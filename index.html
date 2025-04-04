@@ -11,9 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: url("34343434.avif") no-repeat center center/cover;
+            background-color: rgba(223, 147, 15, 0.441);
             font-family: Arial, sans-serif;
-            color: white;
+            color: rgb(154, 111, 42);
         }
 
         .navbar {
@@ -51,7 +51,7 @@
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-        .container{
+        #myCarousel{
             
 display: flex;
 
@@ -68,6 +68,9 @@ align-items: center;
 
         .btn:hover {
             background-color: rgb(53, 89, 160);
+        }
+        .box{
+            align-items: center;
         }
     </style>
 </head>
@@ -90,9 +93,9 @@ align-items: center;
         </div>
     </nav>
 
-    <div class="container mt-5">
+    <div class="container mt-5 ml-5" >
         <h1 class="text-center mb-4">Discover & Play: Explore Different Age Groups</h1>
-        <centre>
+        <div class="box">
             <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 900px; height:500px ; 
 display: flex;
 
@@ -139,7 +142,8 @@ align-items: center;">
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </centre>
+        </div>
+        
         <div class="row">
             <div class="col-md-4">
                 <div class="card p-3 text-center">
