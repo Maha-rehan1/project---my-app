@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventurous Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("BG.jpg") repeat;
+            background-size: cover;
+            animation: backgroundScroll 60s linear infinite;
+            z-index: -1;
+            filter: brightness(0.6);
+        }
+
+        @keyframes backgroundScroll {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 0 100%;
+            }
+        }
+
+        .game-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: 0.3s ease;
+        }
+
+        .game-card:hover {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        a.btn {
+            background-color: #ff5c5c;
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        a.btn:hover {
+            background-color: #ff3c3c;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🔥 Dive Into These Epic Adventure Games</h1>
+
+        <div class="game-card">
+            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1806670/capsule_616x353.jpg?t=1666353719"
+                alt="Haunted House Escape">
+            <h3>Haunted House Escape</h3>
+            <p>Brave the shadows and spooky secrets to escape the haunted mansion!</p>
+            <a href="https://store.steampowered.com/app/1806670/Haunted_House_Escape_A_VR_Experience/" class="btn">Play Now</a>
+        </div>
+
+        <div class="game-card">
+            <img src="https://i.ytimg.com/vi/_m6AaPowrz8/maxresdefault.jpg"
+                alt="Speed Moto Dash">
+            <h3>Speed Moto Dash</h3>
+            <p>Zoom through a futuristic cityscape while dodging obstacles at lightning speed!</p>
+            <a href="https://play.google.com/store/apps/details?id=com.yunbu.speedmoto.dash&hl=en_IN" class="btn">Play Now</a>
+        </div>
+
+        <div class="game-card">
+            <img src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/87de34a132acab6b40d0611a7a1ef17b.png" alt="Hero Rescue">
+            <h3>Hero Rescue</h3>
+            <p>Soar above the clouds on a rescue mission to save your crew!</p>
+            <a href="
+https://poki.com/en/g/hero-rescue" class="btn">Play Now</a>
+        </div>
+
+        <div class="game-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/009/989/501/non_2x/maze-puzzle-game-for-children-with-cute-cartoon-prehistoric-dinosaur-brontosaurus-triceratops-and-volcano-vector.jpg"
+                alt="Volcano Maze">
+            <h3>Volcano Maze</h3>
+            <p>Escape a rumbling volcano by solving tricky mazes and dodging lava!</p>
+            <a href="
+https://www.vegesaurs.com/activity-sheets/volcano-maze" class="btn">Play Now</a>
+        </div>
+
+        <div class="game-card">
+            <img src="https://cdn.content.play123.com/game-images/sea-bubble-pirates-2_big.webp"
+                alt="Sea Bubble Pirates 2">
+            <h3>Sea Bubble Pirates 2</h3>
+            <p>Pop balloons and fend off pirates in this high-seas adventure!</p>
+            <a href="https://www.play123.com/game/sea-bubble-pirates-2" class="btn">Play Now</a>
+        </div>
+
+        <div class="game-card">
+            <img src="https://www.primarygames.com/arcade/action/dragondash/logo200.png"
+                alt="Dragon Dash">
+            <h3>Dragon Dash</h3>
+            <p>Ride your dragon through flaming skies and dodge obstacles in your path!</p>
+            <a href="https://www.primarygames.com/arcade/action/dragondash/" class="btn">Play Now</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
